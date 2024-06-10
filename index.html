@@ -1,61 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío</title>
-    <link rel="stylesheet" href="/assets/css/estilos.css">
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 02 Condiciones</title>
+    <link rel="stylesheet" href="/assets/css/estilos.css" />
+  </head>
+  <body>
     <h1>Desafío 2 - Condiciones</h1>
 
     <!-- Problema 1 -->
     <div class="problem" id="problem1">
-        <h2>Problema 1: Imagen con borde</h2>
-        <img id="toggleImage" src="your-image-source.jpg" alt="Image">
+      <h2>Problema 1: Imagen con borde</h2>
+      <img
+        id="toggleImage"
+        src="/assets/img/santiago-chile-vista-cordillera.jpg"
+        alt="Image"
+      />
     </div>
 
     <!-- Problema 2 -->
     <div class="problem" id="problem2">
-        <h2>Problema 2: Contador de Stickers</h2>
+      <h2>Problema 2: Contador de Stickers</h2>
+      <div class="sticker-row">
         <div class="sticker">
-            <img src="sticker1.jpg" alt="Sticker 1">
-            <input type="number" id="sticker1" min="0" max="10">
+          <img src="/assets/img/git.jpg" alt="Sticker 1" />
+          <input type="number" id="sticker1" min="0" max="10" />
         </div>
         <div class="sticker">
-            <img src="sticker2.jpg" alt="Sticker 2">
-            <input type="number" id="sticker2" min="0" max="10">
+          <img src="/assets/img/slack.jpg" alt="Sticker 2" />
+          <input type="number" id="sticker2" min="0" max="10" />
         </div>
         <div class="sticker">
-            <img src="sticker3.jpg" alt="Sticker 3">
-            <input type="number" id="sticker3" min="0" max="10">
+          <img src="/assets/img/gitHub.png" alt="Sticker 3" />
+          <input type="number" id="sticker3" min="0" max="10" />
         </div>
-        <button onclick="calculateStickers()">Calcular Stickers</button>
-        <p id="stickerMessage"></p>
+      </div>
+      <button onclick="calculateStickers()">Verificar</button>
+      <p id="stickerMessage"></p>
     </div>
 
     <!-- Problema 3 -->
     <div class="problem" id="problem3">
-        <h2>Problema 3: Validación de Password</h2>
-        <select id="digit1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <!-- More options -->
-        </select>
-        <select id="digit2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <!-- More options -->
-        </select>
-        <select id="digit3">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <!-- More options -->
-        </select>
-        <button onclick="checkPassword()">Ingresar</button>
-        <p id="passwordMessage"></p>
+      <h2>Problema 3: Validación de Password</h2>
+      <select id="digit1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select id="digit2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select id="digit3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <button onclick="checkPassword()">Ingresar</button>
+      <p id="passwordMessage"></p>
     </div>
 
     <script src="/assets/js/script.js"></script>
-</body>
+  </body>
 </html>

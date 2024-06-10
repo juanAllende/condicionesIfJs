@@ -1,24 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
 .problem {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.sticker-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  justify-content: flex-start;
 }
 
 .sticker {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.sticker img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 input[type="number"] {
-    width: 50px;
-    margin-left: 10px;
+  width: 50px;
+  margin-top: 5px;
+  text-align: center;
 }
