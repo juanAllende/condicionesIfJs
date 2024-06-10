@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafío</title>
+    <link rel="stylesheet" href="/assets/css/estilos.css">
 </head>
 <body>
-    
+    <h1>Desafío 2 - Condiciones</h1>
+
+    <!-- Problema 1 -->
+    <div class="problem" id="problem1">
+        <h2>Problema 1: Imagen con borde</h2>
+        <img id="toggleImage" src="your-image-source.jpg" alt="Image">
+    </div>
+
+    <!-- Problema 2 -->
+    <div class="problem" id="problem2">
+        <h2>Problema 2: Contador de Stickers</h2>
+        <div class="sticker">
+            <img src="sticker1.jpg" alt="Sticker 1">
+            <input type="number" id="sticker1" min="0" max="10">
+        </div>
+        <div class="sticker">
+            <img src="sticker2.jpg" alt="Sticker 2">
+            <input type="number" id="sticker2" min="0" max="10">
+        </div>
+        <div class="sticker">
+            <img src="sticker3.jpg" alt="Sticker 3">
+            <input type="number" id="sticker3" min="0" max="10">
+        </div>
+        <button onclick="calculateStickers()">Calcular Stickers</button>
+        <p id="stickerMessage"></p>
+    </div>
+
+    <!-- Problema 3 -->
+    <div class="problem" id="problem3">
+        <h2>Problema 3: Validación de Password</h2>
+        <select id="digit1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- More options -->
+        </select>
+        <select id="digit2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- More options -->
+        </select>
+        <select id="digit3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- More options -->
+        </select>
+        <button onclick="checkPassword()">Ingresar</button>
+        <p id="passwordMessage"></p>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

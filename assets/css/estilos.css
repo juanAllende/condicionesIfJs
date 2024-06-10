@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.problem {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sticker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-left: 10px;
+}
